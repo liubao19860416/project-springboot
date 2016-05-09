@@ -5,18 +5,23 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 /**
- * Created by 三劫散仙 on 2015/4/24.
+ * 
+ * @author Liubao
+ * @2016年5月8日
+ *
  */
 @Controller
 @EnableAutoConfiguration
+//@RestController
 public class HellowController {
     
     @RequestMapping("/hellow")
     @ResponseBody
     public String hellow() {
-        return "哈喽，Spring Boot ！";
+        return "哈喽，Spring Boot FROM LIUBAO!";
     }
 
     public static void main(String[] args) {
